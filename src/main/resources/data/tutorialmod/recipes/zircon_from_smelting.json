@@ -1,6 +1,6 @@
 {
   "type": "minecraft:smelting",
-  "cookingtime": 100,
+  "cookingtime": 200,
   "experiance": 0.7,
   "group": "zircon",
   "ingredient": {
