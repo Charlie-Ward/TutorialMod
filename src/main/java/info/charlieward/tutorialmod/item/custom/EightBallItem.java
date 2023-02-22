@@ -35,6 +35,8 @@ public class EightBallItem extends Item {
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag flag) {
         if(Screen.hasShiftDown()){
             components.add(Component.literal("Right click to get random number").withStyle(ChatFormatting.AQUA));
+            components.add(Component.literal("Number Range: 0-9").withStyle(ChatFormatting.AQUA));
+            components.add(Component.literal("Cooldown: 1 second").withStyle(ChatFormatting.AQUA));
         } else {
             components.add(Component.literal("Press SHIFT for more info").withStyle(ChatFormatting.YELLOW));
         }
