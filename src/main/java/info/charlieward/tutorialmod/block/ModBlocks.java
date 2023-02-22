@@ -2,6 +2,7 @@ package info.charlieward.tutorialmod.block;
 
 import info.charlieward.tutorialmod.TutorialMod;
 import info.charlieward.tutorialmod.block.custom.JumpBlock;
+import info.charlieward.tutorialmod.block.custom.ZirconLampBlock;
 import info.charlieward.tutorialmod.item.ModCreativeModeTab;
 import info.charlieward.tutorialmod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -47,6 +48,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> JUMP_BLOCK = registerBlock("jump_block",
             () -> new JumpBlock(BlockBehaviour.Properties.of(Material.STONE).strength(6f).requiresCorrectToolForDrops()),
                     ModCreativeModeTab.TUTORIAL_TAB);
+
+    public static final RegistryObject<Block> ZIRCON_LAMP = registerBlock("zircon_lamp",
+            () -> new ZirconLampBlock(BlockBehaviour.Properties.of(Material.GLASS).strength(6f)
+                    .lightLevel(state -> state.getValue(ZirconLampBlock.LIT) ? 15 : 0)),ModCreativeModeTab.TUTORIAL_TAB);
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
