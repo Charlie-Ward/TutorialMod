@@ -22,8 +22,8 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class JumpBlock extends Block {
-    public JumpBlock(Properties properties) {
+public class JumpBlockTier2 extends Block {
+    public JumpBlockTier2(Properties properties) {
         super(properties);
     }
 
@@ -39,7 +39,7 @@ public class JumpBlock extends Block {
     @Override
     public void appendHoverText(ItemStack stack, @Nullable BlockGetter getter, List<Component> components, TooltipFlag flag) {
         if(Screen.hasShiftDown()){
-            components.add(Component.literal("Stand on this block to get a jump boost").withStyle(ChatFormatting.AQUA));
+            components.add(Component.literal("Stand on this block to get a better jump boost").withStyle(ChatFormatting.AQUA));
         } else {
             components.add(Component.literal("Press SHIFT for more info").withStyle(ChatFormatting.YELLOW));
         }
@@ -50,7 +50,7 @@ public class JumpBlock extends Block {
     @Override
     public void stepOn(Level level, BlockPos pos, BlockState state, Entity entity) {
         if(entity instanceof LivingEntity livingEntity){
-            livingEntity.addEffect(new MobEffectInstance(MobEffects.JUMP, 200, 0));
+            livingEntity.addEffect(new MobEffectInstance(MobEffects.JUMP, 200, 1));
         }
 
         super.stepOn(level, pos, state, entity);

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "rrr",
+    "pjp",
+    "rrr"
+  ],
+  "key": {
+    "r": {
+      "item" : "minecraft:rabbit_foot"
+    },
+    "p": {
+      "item": "minecraft:pink_dye"
+    },
+    "j": {
+      "item": "tutorialmod:jump_block"
+    }
+  },
+  "result": {
+    "item": "tutorialmod:jump_block_tier_2"
+  }
+}
