@@ -3,6 +3,9 @@ package info.charlieward.tutorialmod;
 import com.mojang.logging.LogUtils;
 import info.charlieward.tutorialmod.block.ModBlocks;
 import info.charlieward.tutorialmod.item.ModItems;
+import info.charlieward.tutorialmod.villager.ModVillagers;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -25,6 +28,7 @@ public class TutorialMod {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModVillagers.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -33,6 +37,9 @@ public class TutorialMod {
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
+        event.enqueueWork(() -> {
+            ModVillagers.registerPOIs();
+        });
 
     }
 
