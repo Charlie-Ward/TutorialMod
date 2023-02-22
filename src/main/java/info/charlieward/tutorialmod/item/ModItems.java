@@ -25,6 +25,9 @@ public class ModItems {
             () -> new EightBallItem(new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB).stacksTo(1)
                     .rarity(Rarity.EPIC)));
 
+    public static final RegistryObject<Item> BALL_OF_WATER = ITEMS.register("ball_of_water",
+            () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB).stacksTo(1)));
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }

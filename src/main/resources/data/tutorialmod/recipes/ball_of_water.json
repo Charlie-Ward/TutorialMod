@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "sbs",
+    "bwb",
+    "sbs"
+  ],
+  "key": {
+    "s": {
+      "item": "minecraft:slime_ball"
+    },
+    "w": {
+      "item": "minecraft:water_bucket"
+    },
+    "b": {
+      "item": "minecraft:black_concrete"
+    }
+
+  },
+  "result": {
+    "item": "tutorialmod:ball_of_water"
+  }
+}
