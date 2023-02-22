@@ -1,0 +1,27 @@
+{
+  "item.tutorialmod.zircon": "Zircon",
+  "item.tutorialmod.raw_zircon": "Zircon Brut",
+  "item.tutorialmod.zircon_nugget": "Pépite de Zircon",
+
+  "item.tutorialmod.blueberry": "Myrtille",
+  "item.tutorialmod.blueberry_seeds": "Graines De Bleuets",
+  "item.tutorialmod.blueberry_crop": "Récolte De Bleuets",
+
+  "item.tutorialmod.ball_of_water": "Boule d'eau",
+  "item.tutorialmod.eight_ball": "Boule Huit",
+
+  "block.tutorialmod.zircon_block": "Bloc de Zircon",
+  "block.tutorialmod.zircon_ore": "Minerai de Zircon",
+  "block.tutorialmod.deepslate_zircon_ore": "Minerai de Zircon d'ardoise Profonde",
+  "block.tutorialmod.endstone_zircon_ore": "Minerai de Zircon Endstone",
+  "block.tutorialmod.netherrack_zircon_ore": "Minerai de Zircon du Netherrack",
+
+  "block.tutorialmod.jump_block": "Bloc de Saut",
+  "block.tutorialmod.jump_block_tier_2": "Bloc de Saut (Niveau 2)",
+  "block.tutorialmod.jump_block_tier_3": "Bloc de Saut (Niveau 3)",
+  "block.tutorialmod.zircon_lamp": "Lampe Zircon",
+
+  "itemGroup.tutorialtab": "Onglet Tutoriel Zircon",
+
+  "entity.minecraft.villager.tutorialmod.zircon_master": "Maître Zircon"
+}
