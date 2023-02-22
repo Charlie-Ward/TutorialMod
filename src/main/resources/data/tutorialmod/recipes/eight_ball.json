@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "www",
+    "wbw",
+    "www"
+  ],
+  "key": {
+    "w": {
+      "item": "minecraft:white_dye"
+    },
+    "b": {
+      "item": "tutorialmod:ball_of_water"
+    }
+
+  },
+  "result": {
+    "item": "tutorialmod:ball_of_water"
+  }
+}
