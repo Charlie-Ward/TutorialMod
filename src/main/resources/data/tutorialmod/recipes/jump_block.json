@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "wtw",
+    "rtr",
+    "btb"
+  ],
+  "key": {
+    "w": {
+      "item" : "minecraft:white_dye"
+    },
+    "t": {
+      "item": "minecraft:magenta_glazed_terracotta"
+    },
+    "r": {
+      "item": "minecraft:rabbit_foot"
+    },
+    "b": {
+      "item": "minecraft:black_dye"
+    }
+  },
+  "result": {
+    "item": "tutorialmod:jump_block"
+  }
+}
