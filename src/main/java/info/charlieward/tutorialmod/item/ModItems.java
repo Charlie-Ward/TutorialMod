@@ -1,8 +1,10 @@
 package info.charlieward.tutorialmod.item;
 
 import info.charlieward.tutorialmod.TutorialMod;
+import info.charlieward.tutorialmod.item.custom.EightBallItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -18,6 +20,9 @@ public class ModItems {
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)));
     public static final RegistryObject<Item> ZIRCON_NUGGET = ITEMS.register("zircon_nugget",
             () -> new Item(new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB)));
+
+    public static final RegistryObject<Item> EIGHT_BALL = ITEMS.register("eight_ball",
+            () -> new EightBallItem(new Item.Properties().tab(ModCreativeModeTab.TUTORIAL_TAB).stacksTo(1)));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
