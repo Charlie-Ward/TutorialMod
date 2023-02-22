@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "rrr",
+    "djd",
+    "rrr"
+  ],
+  "key": {
+    "r": {
+      "item" : "minecraft:rabbit_foot"
+    },
+    "d": {
+      "item": "minecraft:diamond"
+    },
+    "j": {
+      "item": "tutorialmod:jump_block_tier_2"
+    }
+  },
+  "result": {
+    "item": "tutorialmod:jump_block_tier_3"
+  }
+}
