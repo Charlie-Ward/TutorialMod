@@ -5,6 +5,8 @@ import info.charlieward.tutorialmod.block.ModBlocks;
 import info.charlieward.tutorialmod.item.ModItems;
 import info.charlieward.tutorialmod.painting.ModPaintings;
 import info.charlieward.tutorialmod.villager.ModVillagers;
+import info.charlieward.tutorialmod.world.feature.ModConfiguredFeatures;
+import info.charlieward.tutorialmod.world.feature.ModPlacedFeatures;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.common.MinecraftForge;
@@ -31,6 +33,9 @@ public class TutorialMod {
         ModBlocks.register(modEventBus);
         ModVillagers.register(modEventBus);
         ModPaintings.register(modEventBus);
+
+        ModConfiguredFeatures.register(modEventBus);
+        ModPlacedFeatures.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
